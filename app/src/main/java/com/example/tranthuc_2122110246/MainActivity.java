@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                if (email.equals("tranthuc") && password.equals("123456")) {
+                if (email.equals("") && password.equals("")) {
                     // Đăng nhập thành công
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
