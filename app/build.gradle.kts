@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    // hoặc: id("com.android.application")
 }
 
 android {
@@ -45,7 +46,10 @@ dependencies {
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
 
-    implementation("com.android.volley:volley:1.2.1") // ✅ Đặt trực tiếp ở đây
+    implementation("com.android.volley:volley:1.2.1")
+
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
